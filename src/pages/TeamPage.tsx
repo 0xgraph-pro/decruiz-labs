@@ -165,12 +165,12 @@ const advisors = [
 ];
 
 const blockchainPartners = [
-  { name: "Ethereum Foundation", desc: "Core infrastructure alignment and EIP co-authorship", accent: "#627EEA", abbr: "ETH" },
-  { name: "Polygon Labs", desc: "ZK rollup deployment partner & zkEVM integration", accent: "#8247E5", abbr: "POL" },
-  { name: "Chainlink", desc: "Oracle infrastructure for cross-chain data feeds", accent: "#375BD2", abbr: "CL" },
-  { name: "Arbitrum", desc: "Layer-2 scaling for DeFi and GameFi workloads", accent: "#28A0F0", abbr: "ARB" },
-  { name: "Cosmos SDK", desc: "IBC-native protocol extensions and zone bridging", accent: "#2E3148", abbr: "COS" },
-  { name: "Solana Foundation", desc: "High-throughput gaming asset settlement rail", accent: "#9945FF", abbr: "SOL" },
+  { name: "Ethereum Foundation", desc: "Core infrastructure alignment and EIP co-authorship", logo: "/company-logo/ethereum-eth-logo.png", abbr: "ETH" },
+  { name: "Polygon Labs", desc: "ZK rollup deployment partner & zkEVM integration", logo: "/company-logo/polygon-matic-logo.svg", abbr: "POL" },
+  { name: "Chainlink", desc: "Oracle infrastructure for cross-chain data feeds", logo: "/company-logo/chainlink-link-logo.svg", abbr: "CL" },
+  { name: "Arbitrum", desc: "Layer-2 scaling for DeFi and GameFi workloads", logo: "/company-logo/arbitrum-arb-logo.svg", abbr: "ARB" },
+  { name: "Cosmos SDK", desc: "IBC-native protocol extensions and zone bridging", logo: "company-logo/cosmos-atom-logo.svg", abbr: "COS" },
+  { name: "Solana Foundation", desc: "High-throughput gaming asset settlement rail", logo: "/company-logo/solana-sol-logo.svg", abbr: "SOL" },
 ];
 
 const ecosystemAlliances = [
@@ -339,20 +339,12 @@ export default function TeamPage() {
           <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=70&auto=format&fit=crop"
             alt=""
-            className="w-full h-full object-cover opacity-10"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
         </div>
 
         <div ref={heroRef} className="relative z-10 max-w-4xl mx-auto text-center opacity-0">
-          <button
-            onClick={() => navigate("/")}
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors duration-200 mb-8 cursor-pointer text-sm font-mono"
-          >
-            <ArrowLeft size={16} weight="bold" />
-            Back to Home
-          </button>
-
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/15 border border-purple-500/30 text-purple-300 font-mono text-xs uppercase tracking-widest mb-6">
             <Users size={12} weight="fill" />
             About DeCruiz Labs
@@ -391,7 +383,7 @@ export default function TeamPage() {
       </section>
 
       {/* ── Vision ── */}
-      <section className="py-24 px-8 bg-gradient-2 border-t border-border">
+      <section className="py-24 px-8 bg-background">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -432,7 +424,7 @@ export default function TeamPage() {
       </section>
 
       {/* ── Company Journey ── */}
-      <section className="py-24 px-8">
+      <section className="py-24 px-8 bg-gradient-2">
         <div className="max-w-4xl mx-auto">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 font-mono text-xs uppercase tracking-widest mb-6">
             <CalendarBlank size={12} weight="fill" />
@@ -653,22 +645,22 @@ export default function TeamPage() {
           </p>
 
           <div className="partners-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {blockchainPartners.map(({ name, desc, accent, abbr }) => (
+            {blockchainPartners.map(({ name, desc, logo, abbr }) => (
               <div
                 key={name}
-                className="partner-card opacity-0 group flex items-start gap-4 p-6 rounded-2xl bg-card border border-border hover:border-accent/30 transition-all duration-300"
+                className="partner-card opacity-0 group flex items-start gap-4 p-6 rounded-2xl  border border-border hover:border-accent/30 transition-all duration-300"
               >
-                <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 font-mono font-bold text-white text-xs shadow-lg"
-                  style={{ background: accent }}
-                >
-                  {abbr}
-                </div>
+                  <img
+                    src={logo}
+                    alt={name}
+                    className="h-8 w-auto object-contain"
+                  />
                 <div>
                   <h3 className="text-foreground font-bold text-sm mb-1 group-hover:text-accent transition-colors duration-200">{name}</h3>
                   <p className="text-muted-foreground font-sans text-xs leading-relaxed">{desc}</p>
                 </div>
               </div>
+              
             ))}
           </div>
         </div>

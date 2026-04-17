@@ -308,10 +308,7 @@ export default function ContactPage() {
         />
 
         {/* Dark overlay so text stays readable */}
-        <div className="absolute inset-0 bg-background/82 pointer-events-none" />
-
-        {/* Subtle gradient fade to page background at bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
 
         {/* Particle network on top of the image */}
         <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none opacity-40" />

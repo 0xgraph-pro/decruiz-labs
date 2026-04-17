@@ -6,18 +6,18 @@ import {
   GithubLogo,
   Star,
 } from "@phosphor-icons/react";
+import { MailIcon } from "lucide-react";
 
 const footerNav = [
   { label: "About", href: "#vision" },
   { label: "Ecosystem", href: "#ecosystem" },
   { label: "Community", href: "#governance" },
-  { label: "Careers", href: "#contact" },
   { label: "Contact", href: "#contact" },
 ];
 
 const socialLinks = [
   { icon: LinkedinLogo, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: TwitterLogo, label: "Twitter", href: "https://twitter.com" },
+  { icon: MailIcon, label: "Mail", href: "https://linkedin.com" },
   { icon: GithubLogo, label: "GitHub", href: "https://github.com" },
 ];
 
@@ -32,16 +32,16 @@ const footerSections = [
       { label: "About Us", href: "#vision" },
       { label: "Blog", href: "/blog" },
       { label: "Press", href: "#" },
-      { label: "Careers", href: "#contact" },
+      { label: "Careers", href: "/careers" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "Documentation", href: "/docs" },
+      // { label: "Documentation", href: "/docs" },
       { label: "Whitepaper", href: "/whitepaper" },
       { label: "GitHub", href: "https://github.com" },
-      { label: "Community Forum", href: "/community" },
+      // { label: "Community Forum", href: "/community" },
     ],
   },
 ];
@@ -108,11 +108,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-md bg-gradient-1 flex items-center justify-center">
-                <span className="text-cta-primary-foreground font-bold text-sm font-mono">
-                  DL
-                </span>
-              </div>
+              <img src="/DeCruiz-Logo.png" className="w-8"/>
               <span className="text-foreground font-bold text-lg tracking-tight font-sans">
                 DeCruiz Labs
               </span>

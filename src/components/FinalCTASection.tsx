@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function FinalCTASection() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
+  const navigate = useNavigate();
 
   // Blockchain network background animation
   useEffect(() => {
@@ -169,6 +171,7 @@ export default function FinalCTASection() {
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 30px rgba(139,92,246,0.35)';
             }}
+            onClick={() => navigate("/contact")}
           >
             <span className="relative z-10 flex items-center gap-2">
               {/* Calendar icon */}

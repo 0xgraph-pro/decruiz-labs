@@ -5,13 +5,13 @@ import { useNavigate, useLocation } from "react-router-dom";
 const navLinks = [
   // { label: "About", href: "#vision" },
   { label: "Ecosystem", href: "#ecosystem" },
+  { label: "Tokenomics", href: "/tokenomics", isPage: true },
   // { label: "Technology", href: "/technology", isPage: true },
   { label: "Team", href: "/team", isPage: true },
   { label: "Careers", href: "/careers", isPage: true },
   { label: "Blog", href: "/blog", isPage: true },
   // { label: "Docs", href: "/docs", isPage: true },
   // { label: "Community", href: "/community", isPage: true },
-  { label: "Tokenomics", href: "/tokenomics", isPage: true },
   // { label: "Strategy Call", href: "/contact", isPage: true },
   // { label: "Governance", href: "#governance" },
   { label: "Contact", href: "#contact" },
@@ -81,7 +81,7 @@ export default function HeaderNav() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md border-b border-border"
+          ? "backdrop-blur-md"
           : "bg-transparent"
       }`}
       role="banner"
@@ -92,7 +92,7 @@ export default function HeaderNav() {
       >
         {/* Logo */}
         <a
-          href="#"
+          href="/"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });

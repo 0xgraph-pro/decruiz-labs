@@ -257,10 +257,10 @@ export default function CareersPage() {
           <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1800&q=80&auto=format&fit=crop"
             alt="DeCruiz Labs team collaborating"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center opacity-40"
           />
           {/* Dark overlay with gradient to ensure text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/75 to-background/30" />
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/75 to-background/30" /> */}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/60" />
         </div>
 
@@ -290,19 +290,10 @@ export default function CareersPage() {
         </div>
 
         <div ref={heroRef} className="relative z-10 max-w-5xl mx-auto px-8 pt-32 pb-24 opacity-0">
-          <button
-            onClick={() => navigate("/")}
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors duration-200 mb-8 cursor-pointer text-sm font-mono"
-          >
-            <ArrowLeft size={16} weight="bold" />
-            Back to Home
-          </button>
-
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 font-mono text-xs uppercase tracking-widest mb-6">
             <Briefcase size={12} weight="fill" />
             We&#39;re Hiring
           </span>
-
           <h1
             className="text-foreground font-bold text-4xl md:text-6xl lg:text-7xl leading-tight tracking-tight mb-6 max-w-3xl"
             style={{ letterSpacing: "-0.03em", lineHeight: "1.1" }}
@@ -353,7 +344,7 @@ export default function CareersPage() {
       </section>
 
       {/* ── Open Roles ── */}
-      <section className="py-24 px-8 bg-gradient-2">
+      <section className="py-24 px-8 bg-background">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-foreground font-bold text-3xl md:text-4xl tracking-tight text-center mb-4">
             Open Positions

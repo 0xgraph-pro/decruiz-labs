@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { ArrowDown, ArrowRight } from "@phosphor-icons/react";
 import gsap from "gsap";
 import StatNumber from "./StatNumber";
-import { TypewriterEffectSmooth } from "./modern-ui/typewriter-effect";
 import TextType from "./ui/TextType";
 
 /* ─── Typing animation words ──────────────────────────────── */
@@ -207,10 +206,11 @@ export default function HeroSection() {
               style={{ background: "linear-gradient(90deg,#a855f7,#22d3ee,#10b981)", opacity: 0.7 }}
             /> */}
             <TextType 
-              text={["Web3", "DeFi", "Real-Estate"]}
+              text={["Web3", "DeFi", "Gaming", "Real-Estate"]}
               typingSpeed={75}
               pauseDuration={1500}
-              cursorCharacter="_"
+              className="bg-gradient-3 bg-clip-text text-transparent underline"
+              cursorCharacter="|"
               texts={["Web3","DeFi"]}
               deletingSpeed={50}
               variableSpeedEnabled={false}

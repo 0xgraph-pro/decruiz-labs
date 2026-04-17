@@ -97,7 +97,7 @@ const cards = [
     border: "rgba(34,211,238,0.35)",
     iconBg: "rgba(34,211,238,0.10)",
     Icon: DexIcon,
-    image: "https://images.unsplash.com/photo-1642104704074-907c0698b98d?w=600&q=80&auto=format&fit=crop",
+    image: "/assests/dex-liquidity.jpeg",
   },
   {
     title: "Real Estate Tokenization & RWA",

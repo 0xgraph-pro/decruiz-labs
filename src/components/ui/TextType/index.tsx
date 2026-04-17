@@ -144,7 +144,7 @@ const TextType = ({
     isVisible,
     reverseMode,
     variableSpeed,
-    onSentenceComplete
+    onSentenceComplete,
   ]);
 
   const shouldHideCursor =
@@ -157,7 +157,7 @@ const TextType = ({
       className: `text-type ${className}`,
       ...props
     },
-    <span className="text-type__content" style={{ color: getCurrentTextColor() || 'inherit' }}>
+    <span className="text-type__content bg-clip-text text-transparent" style={{ color: getCurrentTextColor() || 'inherit', backgroundImage: "linear-gradient(135deg,#a855f7,#22d3ee,#10b981)" }}>
       {displayedText}
     </span>,
     // showCursor && (
