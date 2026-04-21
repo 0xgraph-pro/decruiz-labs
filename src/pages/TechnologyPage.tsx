@@ -299,5 +299,6 @@ export default function TechnologyPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

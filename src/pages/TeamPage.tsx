@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import {
   ArrowLeft,
   LinkedinLogo,
@@ -25,7 +26,9 @@ import {
   Mountains,
   Confetti,
   GameController,
+  
 } from "@phosphor-icons/react";
+import { MailIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -39,7 +42,7 @@ const milestones = [
   {
     year: "2019",
     title: "Founded in Berlin",
-    desc: "Alejandro Cruiz and Marina Vasquez left Goldman Sachs and MIT to prototype the first cross-chain identity layer.",
+    desc: "Leo Kelly and Brian Walker left Goldman Sachs and MIT to prototype the first cross-chain identity layer.",
     accent: "from-cyan-500 to-blue-600",
   },
   {
@@ -81,60 +84,30 @@ const team = [
     img: "/teams/leo-kelly.png",
     gradient: "from-cyan-500 to-blue-600",
     icon: Rocket,
-    social: { linkedin: "https://linkedin.com", twitter: "https://twitter.com", github: "https://github.com" },
+    social: { linkedin: "https://www.linkedin.com/in/leo-kelly-44606b58/", email: "mailto:consulting@decruizlabs.com" },
     tags: ["Web3", "DeFi", "Strategy"],
     location: "Berlin, DE",
   },
   {
-    name: "Marina Vasquez",
+    name: "Brian Walker",
     role: "CTO & Co-Founder",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80&auto=format&fit=crop&face",
+    img: "/teams/brian-walker.jpg",
     gradient: "from-purple-500 to-violet-700",
     icon: Code,
-    social: { linkedin: "https://linkedin.com", twitter: "https://twitter.com", github: "https://github.com" },
+    social: { linkedin: "https://www.linkedin.com/in/brian-walker-04b41214/", email: "mailto:technical@decruizlabs.com" },
     tags: ["ZK Proofs", "Protocol Design", "Cryptography"],
     location: "Cambridge, US",
   },
   {
     name: "David Kimura",
-    role: "Head of DeFi",
+    role: "Head of Talent",
     img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80&auto=format&fit=crop&face",
     gradient: "from-amber-500 to-orange-600",
     icon: ChartPieSlice,
-    social: { linkedin: "https://linkedin.com", twitter: "https://twitter.com", github: "https://github.com" },
+    social: { linkedin: "https://linkedin.com", email: "mailto:talent@decruizlabs.com" },
     tags: ["DeFi", "Liquidity", "Tokenomics"],
     location: "Tokyo, JP",
-  },
-  {
-    name: "Priya Nair",
-    role: "Head of Gaming",
-    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&q=80&auto=format&fit=crop&face",
-    gradient: "from-emerald-500 to-teal-600",
-    icon: Star,
-    social: { linkedin: "https://linkedin.com", twitter: "https://twitter.com", github: "https://github.com" },
-    tags: ["GameFi", "NFTs", "Asset Portability"],
-    location: "Singapore, SG",
-  },
-  {
-    name: "Thomas Richter",
-    role: "Head of Real Estate",
-    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=80&auto=format&fit=crop&face",
-    gradient: "from-rose-500 to-pink-700",
-    icon: Handshake,
-    social: { linkedin: "https://linkedin.com", twitter: "https://twitter.com" },
-    tags: ["RWA", "Tokenization", "Real Estate"],
-    location: "Frankfurt, DE",
-  },
-  {
-    name: "Yuki Tanaka",
-    role: "Chief Research Scientist",
-    img: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=500&q=80&auto=format&fit=crop&face",
-    gradient: "from-indigo-500 to-blue-700",
-    icon: Brain,
-    social: { linkedin: "https://linkedin.com", twitter: "https://twitter.com", github: "https://github.com" },
-    tags: ["Research", "Consensus", "ZK Cryptography"],
-    location: "Osaka, JP",
-  },
+  }
 ];
 
 const advisors = [
@@ -331,7 +304,21 @@ export default function TeamPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans">
+    <>
+      <Helmet>
+        <title>Team - DeCruiz Labs | Meet Our Experts</title>
+        <meta name="description" content="Meet the DeCruiz Labs team: experts in Web3, blockchain, and interoperability across gaming, DeFi, and real estate." />
+        <meta name="keywords" content="DeCruiz Labs team, Web3 experts, blockchain developers, interoperability specialists" />
+        <link rel="canonical" href="https://decruizlabs.com/team" />
+        <meta property="og:title" content="Team - DeCruiz Labs | Meet Our Experts" />
+        <meta property="og:description" content="Meet the DeCruiz Labs team: experts in Web3, blockchain, and interoperability." />
+        <meta property="og:url" content="https://decruizlabs.com/team" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Team - DeCruiz Labs | Meet Our Experts" />
+        <meta name="twitter:description" content="Meet the DeCruiz Labs team: experts in Web3, blockchain, and interoperability." />
+      </Helmet>
+      <div className="min-h-screen bg-background text-foreground font-sans">
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden pt-32 pb-24 px-8">
@@ -514,20 +501,20 @@ export default function TeamPage() {
                         <LinkedinLogo size={15} weight="fill" />
                       </a>
                     )}
-                    {social.twitter && (
-                      <a href={social.twitter} target="_blank" rel="noopener noreferrer"
+                    {social.email && (
+                      <a href={social.email} target="_blank" rel="noopener noreferrer"
                         className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200"
-                        aria-label={`${name} on Twitter`}>
-                        <TwitterLogo size={15} weight="fill" />
+                        aria-label={`${name} on Email`}>
+                        <MailIcon size={15} />
                       </a>
                     )}
-                    {social.github && (
+                    {/* {social.github && (
                       <a href={social.github} target="_blank" rel="noopener noreferrer"
                         className="w-8 h-8 rounded-lg bg-muted border border-border flex items-center justify-center text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200"
                         aria-label={`${name} on GitHub`}>
                         <GithubLogo size={15} weight="fill" />
                       </a>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </article>
@@ -602,7 +589,7 @@ export default function TeamPage() {
       </section>
 
       {/* ── Advisors ── */}
-      <section className="py-24 px-8">
+      {/* <section className="py-24 px-8">
         <div className="max-w-5xl mx-auto">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-300 font-mono text-xs uppercase tracking-widest mb-6">
             <Star size={12} weight="fill" />
@@ -628,7 +615,7 @@ export default function TeamPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── Blockchain Partnerships ── */}
       <section className="py-24 px-8 bg-gradient-2 border-t border-border">
@@ -791,5 +778,6 @@ export default function TeamPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
