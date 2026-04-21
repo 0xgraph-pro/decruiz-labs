@@ -183,7 +183,7 @@ const useCases = [
     color: "#a78bfa",
     icon: "🌐",
     metrics: ["full asset ownership", "passive land yield", "cross-world portability"],
-    image: "https://images.unsplash.com/photo-1614728263952-84ea256f9d0d?w=800&q=80&auto=format&fit=crop",
+    image: "/assests/virtual-world.jpg",
   },
   {
     title: "Play-to-Earn Game",

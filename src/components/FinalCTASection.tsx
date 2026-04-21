@@ -171,7 +171,7 @@ export default function FinalCTASection() {
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 0 30px rgba(139,92,246,0.35)';
             }}
-            onClick={() => navigate("/contact")}
+            onClick={() => { location.href = "/contact"; }}
           >
             <span className="relative z-10 flex items-center gap-2">
               {/* Calendar icon */}

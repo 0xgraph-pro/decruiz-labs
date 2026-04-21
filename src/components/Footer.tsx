@@ -16,9 +16,9 @@ const footerNav = [
 ];
 
 const socialLinks = [
-  { icon: LinkedinLogo, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: MailIcon, label: "Mail", href: "https://linkedin.com" },
-  { icon: GithubLogo, label: "GitHub", href: "https://github.com" },
+  { icon: LinkedinLogo, label: "LinkedIn", href: "https://linkedin.com/company/decruiz-labs-group" },
+  { icon: MailIcon, label: "Mail", href: "mailto:support@decruizlabs.com" },
+  { icon: GithubLogo, label: "GitHub", href: "https://github.com/decruiz-labs" },
 ];
 
 const footerSections = [
@@ -31,7 +31,7 @@ const footerSections = [
     links: [
       { label: "About Us", href: "#vision" },
       { label: "Blog", href: "/blog" },
-      { label: "Press", href: "#" },
+      // { label: "Press", href: "#" },
       { label: "Careers", href: "/careers" },
     ],
   },
@@ -40,7 +40,7 @@ const footerSections = [
     links: [
       // { label: "Documentation", href: "/docs" },
       { label: "Whitepaper", href: "/whitepaper" },
-      { label: "GitHub", href: "https://github.com" },
+      { label: "GitHub", href: "https://github.com/decruiz-labs" },
       // { label: "Community Forum", href: "/community" },
     ],
   },
@@ -151,12 +151,12 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} DeCruiz Labs. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <button className="text-muted-foreground hover:text-accent font-sans text-xs transition-colors duration-200 cursor-pointer">
+            <a href="/privacy-policy" className="text-muted-foreground hover:text-accent font-sans text-xs transition-colors duration-200 cursor-pointer">
               Privacy Policy
-            </button>
-            <button className="text-muted-foreground hover:text-accent font-sans text-xs transition-colors duration-200 cursor-pointer">
+            </a>
+            <a href="/terms-of-service" className="text-muted-foreground hover:text-accent font-sans text-xs transition-colors duration-200 cursor-pointer">
               Terms of Service
-            </button>
+            </a>
           </div>
         </div>
       </div>

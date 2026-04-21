@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import {
   ArrowLeft,
   Lightning,
@@ -115,7 +116,21 @@ export default function TechnologyPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans">
+    <>
+      <Helmet>
+        <title>Technology - DeCruiz Labs | Advanced Web3 Infrastructure</title>
+        <meta name="description" content="Explore DeCruiz Labs' core technology pillars: cross-chain bridge protocol, decentralized identity, high-throughput execution engine, and modular architecture for Web3 interoperability." />
+        <meta name="keywords" content="Web3 technology, blockchain infrastructure, cross-chain bridge, decentralized identity, high-throughput engine, modular architecture" />
+        <link rel="canonical" href="https://decruizlabs.com/technology" />
+        <meta property="og:title" content="Technology - DeCruiz Labs" />
+        <meta property="og:description" content="Advanced Web3 infrastructure for seamless interoperability across gaming, DeFi, and real estate." />
+        <meta property="og:url" content="https://decruizlabs.com/technology" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Technology - DeCruiz Labs" />
+        <meta name="twitter:description" content="Advanced Web3 infrastructure for seamless interoperability." />
+      </Helmet>
+      <div className="min-h-screen bg-background text-foreground font-sans">
       {/* ── Hero ── */}
       <section className="relative overflow-hidden pt-32 pb-24 px-8">
         <div className="absolute inset-0 pointer-events-none">

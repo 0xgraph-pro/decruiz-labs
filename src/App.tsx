@@ -1,6 +1,7 @@
 import React from 'react';
 import { AnimaProvider } from '@animaapp/playground-react-sdk';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import HeaderNav from './components/HeaderNav';
 import HeroSection from './components/HeroSection';
 import VisionSection from './components/VisionSection';
@@ -35,6 +36,8 @@ import DexLiquidityPage from './pages/DexLiquidityPage';
 import RealEstateRWAPage from './pages/RealEstateRWAPage';
 import NftUtilityPage from './pages/NftUtilityPage';
 import DaoGovernancePage from './pages/DaoGovernancePage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 
 function Layout() {
   return (
@@ -49,6 +52,19 @@ function Layout() {
 function HomePage() {
   return (
     <>
+      <Helmet>
+        <title>DeCruiz Labs - Web3 Interoperability for Gaming, DeFi & Real Estate</title>
+        <meta name="description" content="Building the future of Web3 with seamless interoperability across gaming, DeFi, and real estate ecosystems. Discover our cross-chain bridge protocol and decentralized identity solutions." />
+        <meta name="keywords" content="Web3, blockchain, interoperability, gaming, DeFi, real estate, cross-chain bridge, decentralized identity" />
+        <link rel="canonical" href="https://decruizlabs.com" />
+        <meta property="og:title" content="DeCruiz Labs - Web3 Interoperability" />
+        <meta property="og:description" content="Building Web3 Interoperability Across Gaming, DeFi & Real Estate" />
+        <meta property="og:url" content="https://decruizlabs.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="DeCruiz Labs - Web3 Interoperability" />
+        <meta name="twitter:description" content="Building Web3 Interoperability Across Gaming, DeFi & Real Estate" />
+      </Helmet>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -110,6 +126,8 @@ const router = createBrowserRouter([
       { path: 'rwa-tokenization', element: <RealEstateRWAPage /> },
       { path: 'nft-utility', element: <NftUtilityPage /> },
       { path: 'dao-governance', element: <DaoGovernancePage /> },
+      { path: 'privacy-policy', element: <PrivacyPolicyPage /> },
+      { path: 'terms-of-service', element: <TermsOfServicePage /> },
     ],
   },
 ]);

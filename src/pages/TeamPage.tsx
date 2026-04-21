@@ -76,9 +76,9 @@ const milestones = [
 
 const team = [
   {
-    name: "Alejandro Cruiz",
+    name: "Leo Kelly",
     role: "Founder & CEO",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80&auto=format&fit=crop&face",
+    img: "/teams/leo-kelly.png",
     gradient: "from-cyan-500 to-blue-600",
     icon: Rocket,
     social: { linkedin: "https://linkedin.com", twitter: "https://twitter.com", github: "https://github.com" },
