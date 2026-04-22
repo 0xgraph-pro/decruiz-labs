@@ -99,12 +99,12 @@ const team = [
     location: "Cambridge, US",
   },
   {
-    name: "David Kimura",
+    name: "Fanette Bally",
     role: "Head of Talent",
-    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80&auto=format&fit=crop&face",
+    img: "/teams/fanette-bally.jpg",
     gradient: "from-amber-500 to-orange-600",
     icon: ChartPieSlice,
-    social: { linkedin: "https://linkedin.com", email: "mailto:talent@decruizlabs.com" },
+    social: { linkedin: "https://www.linkedin.com/in/fanette-bally/", email: "mailto:talent@decruizlabs.com" },
     tags: ["DeFi", "Liquidity", "Tokenomics"],
     location: "Tokyo, JP",
   }
