@@ -62,7 +62,7 @@ function FooterAccordion({
       const el = document.getElementById(id);
       if (el) el.scrollIntoView({ behavior: "smooth" });
     } else if (href.startsWith("/")) {
-      navigate(href);
+      location.href = href;
     } else {
       window.open(href, "_blank", "noopener noreferrer");
     }
