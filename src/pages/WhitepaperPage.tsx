@@ -121,7 +121,7 @@ export default function WhitepaperPage() {
         <div className="max-w-4xl mx-auto text-center wp-hero-content relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent text-sm font-mono mb-6">
             <FileText size={16} weight="bold" />
-            Technical Whitepaper v2.1
+            Technical Whitepaper v2
           </div>
           <h1 className="text-5xl md:text-6xl font-bold font-sans mb-6 leading-tight">
             DeCruiz Protocol
@@ -136,22 +136,21 @@ export default function WhitepaperPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#"
+              href="/DECRUIZ LABS WHITEPAPER v2.pdf"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-accent text-white font-semibold font-sans hover:bg-accent/90 transition-colors duration-200"
+              download={true}
             >
               <DownloadSimple size={20} weight="bold" />
               Download PDF
             </a>
-            <button
-              onClick={() => {
-                const el = document.getElementById("wp-sections");
-                if (el) el.scrollIntoView({ behavior: "smooth" });
-              }}
+            <a
+              href="/DECRUIZ LABS WHITEPAPER v2.pdf"
+              target="_blank"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-semibold font-sans hover:border-accent/50 hover:text-accent transition-colors duration-200"
             >
               <BookOpen size={20} weight="bold" />
               Read Online
-            </button>
+            </a>
           </div>
         </div>
       </section>

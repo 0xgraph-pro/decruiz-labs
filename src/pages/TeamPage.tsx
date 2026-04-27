@@ -42,7 +42,7 @@ const milestones = [
   {
     year: "2019",
     title: "Founded in Berlin",
-    desc: "Leo Kelly and Brian Walker left Goldman Sachs and MIT to prototype the first cross-chain identity layer.",
+    desc: "Stephen Nagler and Brian Walker left Goldman Sachs and MIT to prototype the first cross-chain identity layer.",
     accent: "from-cyan-500 to-blue-600",
   },
   {
@@ -79,12 +79,12 @@ const milestones = [
 
 const team = [
   {
-    name: "Leo Kelly",
+    name: "Stephen Nagler",
     role: "Founder & CEO",
-    img: "/teams/leo-kelly.png",
+    img: "/teams/stephen.png",
     gradient: "from-cyan-500 to-blue-600",
     icon: Rocket,
-    social: { linkedin: "https://www.linkedin.com/in/leo-kelly-44606b58/", email: "mailto:consulting@decruizlabs.com" },
+    social: { linkedin: "https://www.linkedin.com/in/stephen-nagler-482b3311/", email: "mailto:consulting@decruizlabs.com" },
     tags: ["Web3", "DeFi", "Strategy"],
     location: "Berlin, DE",
   },

@@ -58,7 +58,7 @@ const jobDetails: Record<
     ],
   },
   "senior-web3-fullstack-engineer": {
-  about:
+    about:
     "You’ll play a key role in building DeCruiz’s end-to-end Web3 products, from smart contracts to backend services and user-facing applications. Working closely with product, design, and protocol teams, you’ll turn complex blockchain interactions into seamless, high-performance user experiences.",
     responsibilities: [
       "Design and develop full-stack decentralized applications (dApps) across frontend, backend, and smart contract layers",
@@ -91,6 +91,95 @@ const jobDetails: Record<
       "Final interview with Engineering & Product (90 min)",
       "Reference checks & offer",
     ],
+  },
+  "engineering-manager": {
+    "about":
+      "You’ll lead and scale DeCruiz’s engineering team, driving the development of end-to-end Web3 products across smart contracts, backend systems, and user-facing applications. You’ll work closely with product, design, and protocol teams to align technical execution with business goals, while mentoring engineers and ensuring high standards in performance, security, and scalability.",
+    
+    "responsibilities": [
+      "Lead, mentor, and grow a team of full-stack and blockchain engineers",
+      "Own the technical delivery of Web3 products from architecture to deployment",
+      "Collaborate cross-functionally with product, design, and protocol teams to define roadmap and priorities",
+      "Establish best practices for code quality, testing, security, and scalability",
+      "Oversee system architecture across frontend, backend, and smart contract layers",
+      "Ensure smooth integration of blockchain interactions into user-friendly applications",
+      "Drive performance optimization, reliability, and infrastructure improvements",
+      "Conduct code reviews, technical planning, and sprint execution",
+      "Hire, onboard, and develop top engineering talent",
+      "Balance hands-on technical contribution with leadership responsibilities"
+    ],
+    
+    "requirements": [
+      "7+ years of software engineering experience, with 2+ years in a leadership or management role",
+      "Strong background in full-stack development (JavaScript/TypeScript, React, Node.js)",
+      "Hands-on experience with Web3 technologies (smart contracts, wallets, blockchain interactions)",
+      "Experience designing scalable systems and distributed architectures",
+      "Solid understanding of blockchain fundamentals, DeFi, NFTs, or cross-chain ecosystems",
+      "Proven ability to lead teams in fast-paced, high-growth environments",
+      "Strong communication skills and ability to align technical and business goals",
+      "Experience managing engineering processes (Agile/Scrum, sprint planning, delivery tracking)"
+    ],
+    
+    "niceToHave": [
+      "Hands-on experience with Solidity or other smart contract languages",
+      "Experience working with L2 ecosystems (Optimism, Arbitrum, zkSync, etc.)",
+      "Familiarity with Rust or Go for backend or protocol development",
+      "Experience with DevOps, CI/CD pipelines, and cloud infrastructure",
+      "Knowledge of security best practices in Web3 development",
+      "Prior experience building or scaling Web3 startups",
+      "Contributions to open-source or developer communities"
+    ],
+    
+    "process": [
+      "Initial screening with Talent team (30 min)",
+      "Technical & leadership interview with Engineering Lead (60 min)",
+      "System design + team management discussion (90 min)",
+      "Final interview with leadership team (60 min)",
+      "Reference checks & offer"
+    ]
+  },
+  "technical-advisor": {
+    "about":
+      "You’ll act as a strategic technical partner to DeCruiz, guiding architecture, product direction, and engineering decisions across our Web3 ecosystem. Leveraging your deep expertise in blockchain and scalable systems, you’ll support leadership and engineering teams in solving complex challenges, reducing risk, and accelerating product delivery.",
+    
+    "responsibilities": [
+      "Provide high-level technical guidance on architecture, scalability, and system design",
+      "Advise on blockchain strategy, protocol integrations, and technology stack decisions",
+      "Review and validate smart contract, backend, and infrastructure designs",
+      "Identify technical risks and propose mitigation strategies",
+      "Support engineering leadership in defining best practices and development standards",
+      "Contribute to product strategy from a technical feasibility perspective",
+      "Mentor senior engineers and engineering leaders when needed",
+      "Stay up-to-date with Web3 trends and recommend innovations relevant to the business",
+      "Participate in key technical discussions, reviews, and milestone planning"
+    ],
+    
+    "requirements": [
+      "8+ years of experience in software engineering or system architecture",
+      "Strong expertise in blockchain technologies and Web3 ecosystems",
+      "Experience designing scalable, secure, and distributed systems",
+      "Familiarity with smart contracts (Solidity or similar) and DeFi/NFT ecosystems",
+      "Proven track record of advising or leading complex technical projects",
+      "Strong analytical and problem-solving skills",
+      "Excellent communication skills with the ability to influence technical and non-technical stakeholders"
+    ],
+    
+    "niceToHave": [
+      "Previous experience as a Technical Advisor, CTO, or Principal Engineer",
+      "Hands-on experience with L2 solutions and cross-chain architectures",
+      "Background in security audits or secure system design",
+      "Experience with Rust, Go, or protocol-level development",
+      "Strong network within the Web3 ecosystem",
+      "Contributions to open-source or industry thought leadership"
+    ],
+    
+    "process": [
+      "Intro call with leadership team (30 min)",
+      "Deep-dive discussion on architecture and advisory scope (60 min)",
+      "Case-based or strategic discussion (optional)",
+      "Alignment on engagement model (retainer, part-time, or advisory equity)",
+      "Reference checks & onboarding"
+    ]
   },
   "defi-quant-researcher": {
     about:
