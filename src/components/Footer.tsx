@@ -5,6 +5,7 @@ import {
   TwitterLogo,
   GithubLogo,
   Star,
+  TelegramLogoIcon,
 } from "@phosphor-icons/react";
 import { MailIcon } from "lucide-react";
 
@@ -18,7 +19,8 @@ const footerNav = [
 const socialLinks = [
   { icon: LinkedinLogo, label: "LinkedIn", href: "https://linkedin.com/company/decruiz-labs-group" },
   { icon: MailIcon, label: "Mail", href: "mailto:support@decruizlabs.com" },
-  { icon: GithubLogo, label: "GitHub", href: "https://github.com/decruiz-labs" },
+  { icon: TelegramLogoIcon, label: "Telegram", href: "https://t.me/decruizlabs" },
+  // { icon: GithubLogo, label: "GitHub", href: "https://github.com/decruiz-labs" },
 ];
 
 const footerSections = [
