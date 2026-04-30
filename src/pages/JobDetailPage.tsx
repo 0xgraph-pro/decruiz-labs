@@ -138,6 +138,40 @@ const jobDetails: Record<
       "Reference checks & offer"
     ]
   },
+  "lead-blockchain-engineer": {
+    "about":
+      "You’ll lead the design and development of scalable blockchain infrastructure powering our Web3 ecosystem across gaming, DeFi, and tokenized real-world assets. This role is hands-on and architectural—building core protocol systems, cross-chain integrations, and high-performance smart contract infrastructure that supports millions of users and complex on-chain interactions.",
+    "responsibilities": [
+      "Design and build core blockchain architecture across multiple products (gaming, DeFi, RWAs)",
+      "Develop and optimize smart contracts (Solidity) with a focus on security, scalability, and gas efficiency",
+      "Architect cross-chain and chain-agnostic infrastructure for asset and liquidity interoperability",
+      "Lead technical decisions on protocol design, indexing, and on-chain/off-chain integration",
+      "Collaborate with product, security, and research teams to translate economic and product logic into robust systems",
+      "Review and guide smart contract development across engineering teams",
+      "Drive best practices for testing, audits, and secure deployment pipelines",
+    ],
+    "requirements": [
+      "5+ years of software engineering experience with 3+ years in blockchain/Web3 development",
+      "Strong proficiency in Solidity and Ethereum ecosystem (or equivalent L1/L2 stacks)",
+      "Deep understanding of DeFi protocols, smart contract security, and on-chain architecture patterns",
+      "Experience building scalable backend systems and distributed architectures",
+      "Strong knowledge of token standards, bridging mechanisms, and cross-chain communication",
+      "Ability to lead technical direction and mentor engineering teams",
+    ],
+    "niceToHave": [
+      "Experience with L2 solutions (Arbitrum, Optimism, zk-rollups)",
+      "Knowledge of Rust (Solana, CosmWasm, or Substrate)",
+      "Familiarity with MEV, liquidity routing, or advanced DeFi primitives",
+      "Prior experience in leading blockchain teams or protocol-level engineering",
+      "Exposure to DAO governance systems and on-chain identity/reputation models",
+    ],
+    "process": [
+      "Initial Technical Assessment (~90 min)",
+      "Intro & Technical screen with Engineering Lead (60 min)",
+      "Final interview with Engineering & Product (90 min)",
+      "Reference checks & offer",
+    ],
+  },
   "technical-advisor": {
     "about":
       "You’ll act as a strategic technical partner to DeCruiz, guiding architecture, product direction, and engineering decisions across our Web3 ecosystem. Leveraging your deep expertise in blockchain and scalable systems, you’ll support leadership and engineering teams in solving complex challenges, reducing risk, and accelerating product delivery.",
