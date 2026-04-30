@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import {
   LinkedinLogo,
-  TwitterLogo,
-  GithubLogo,
   Star,
   TelegramLogoIcon,
 } from "@phosphor-icons/react";
@@ -56,7 +53,6 @@ function FooterAccordion({
   links: { label: string; href: string }[];
 }) {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
 
   const handleClick = (href: string) => {
     if (href.startsWith("#")) {
